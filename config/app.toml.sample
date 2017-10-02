@@ -1,7 +1,7 @@
 [development]
 cobrandUrl       = "https://developer.api.yodlee.com/ysl/restserver/v1/cobrand/login"
-cobrandLogin     = "sbCobsnoronha"
-cobrandPassword  = "13de98a8-7b41-44e2-8d4c-5f08df59b863"
+cobrandLogin     = "sbCobXXX"
+cobrandPassword  = "XXXXXXXXXXXXXX"
 loginUrl         = "https://developer.api.yodlee.com/ysl/restserver/v1/user/login"
 accountsUrl      = "https://developer.api.yodlee.com/ysl/restserver/v1/accounts"
 transactionsUrl  = "https://developer.api.yodlee.com/ysl/restserver/v1/transactions"    
