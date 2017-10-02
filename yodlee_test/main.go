@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+    "fmt"
     "github.com/spf13/viper"
     "yodlee_client/lib"
 )
