@@ -19,10 +19,11 @@ func main() {
     cobrandLogin     := viper.GetString("development.cobrandLogin")
     cobrandPassword  := viper.GetString("development.cobrandPassword")
     loginUrl         := viper.GetString("development.loginUrl")
-    fastlinkTokenUrl := viper.GetString("development.fastlinkTokenUrl")
     loginName        := "sbMemsnoronha2"
     password         := "sbMemsnoronha2#123"
-    accountUrl       := viper.GetString("development.accountUrl")
+    accountsUrl      := viper.GetString("development.accountsUrl")
+    transactionsUrl  := viper.GetString("development.transactionsUrl")
+    fastlinkTokenUrl := viper.GetString("development.fastlinkTokenUrl")
 
     //------ Cobrand Login ------//
     cobMap          := lib.CobrandLogin(cobrandUrl, cobrandLogin, cobrandPassword)
@@ -51,12 +52,11 @@ func main() {
     fmt.Printf("--------- FASTLINK TOKEN ---------\n%v\n\n", fastlinkTokenArr)
     
     //------ Get Accounts ------//
-    // _ = accountUrl
-    accountArr := lib.GetAccounts(accountUrl, cobSession, userSession)
-    fmt.Printf("--------- ACCT ARRAY ---------\n%v\n\n", accountArr)
+    // _ = accountsUrl
+    accountArr := lib.GetAccounts(accountsUrl, cobSession, userSession)
+    fmt.Printf("--------- ACCOUNTS ARRAY ---------\n%v\n\n", accountArr)
     
     //------ Get Transactions ------//
-    txnUrl  := "https://developer.api.yodlee.com/ysl/restserver/v1/transactions"
-    txnArr  := lib.GetTransactions(txnUrl, cobSession, userSession)
-    fmt.Printf("-------- TXN ARRAY --------\n%v\n\n", txnArr)
+    transactionsArr  := lib.GetTransactions(transactionsUrl, cobSession, userSession)
+    fmt.Printf("-------- TRANSACTIONS ARRAY --------\n%v\n\n", transactionsArr)
 }

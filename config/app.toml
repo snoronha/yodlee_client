@@ -3,5 +3,6 @@ cobrandUrl       = "https://developer.api.yodlee.com/ysl/restserver/v1/cobrand/l
 cobrandLogin     = "sbCobsnoronha"
 cobrandPassword  = "13de98a8-7b41-44e2-8d4c-5f08df59b863"
 loginUrl         = "https://developer.api.yodlee.com/ysl/restserver/v1/user/login"
-accountUrl       = "https://developer.api.yodlee.com/ysl/restserver/v1/accounts"
+accountsUrl      = "https://developer.api.yodlee.com/ysl/restserver/v1/accounts"
+transactionsUrl  = "https://developer.api.yodlee.com/ysl/restserver/v1/transactions"    
 fastlinkTokenUrl = "https://developer.api.yodlee.com/ysl/restserver/v1/user/accessTokens"
